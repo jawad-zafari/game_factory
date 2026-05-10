@@ -221,4 +221,67 @@
         }
     }
 
+  
+    @media (max-width: 768px) {
+        font-size: small;
+        display: grid;
+        grid-template-columns: 120px 1fr; 
+        grid-template-areas:
+            "image name"
+            "image role"
+            "image bio"
+            "icons tags"; 
+        gap: 5px 20px;
+        text-align: left; 
+        align-items: start;
+        padding: 20px;
+
+        &__image {
+            grid-area: image;
+            margin-bottom: 0;
+        }
+
+        &__name {
+            font-size: small;
+            grid-area: name;
+            margin-top: 10px;
+        }
+
+        &__role {
+            font-size: smaller;
+            grid-area: role;
+            margin-bottom: 10px;
+            color: #000000; 
+        }
+
+        &__bio {
+            font-size:xx-small;
+            grid-area: bio;
+            margin-bottom: 15px;
+        }
+
+        &__icons {
+            grid-area: icons;
+            display: flex; 
+            gap: 15px;
+            justify-content: center; 
+            margin-top: 15px;
+            font-size: 1.2rem;
+        }
+
+        &__tags {
+            display: flex;
+            grid-area: tags;
+            justify-content: flex-start; 
+            margin-top: 15px;
+                span {
+                    font-size:50%; 
+                }
+        }
+        &__icons {
+            font-size:x-small;
+            margin-top: 60px;
+            margin-right: 60px;
+        }
+    }
 }
