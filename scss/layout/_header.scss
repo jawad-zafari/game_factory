@@ -48,5 +48,30 @@
         }
     }
 
-    
+    &__nav {
+        margin-left: auto;
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 10px;
+
+            li a {
+                display: inline-block;
+                padding: 10px 20px;
+                text-decoration: none;
+                color: #000000;
+                border-radius: 4px;
+                font-weight: bold;
+                font-family: 'Arial', sans-serif;
+                transition: background-color 0.3s ease, color 0.3s ease;
+
+                &:hover {
+                    background-color: #000000;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
 }
