@@ -74,4 +74,51 @@
         }
     }
 
+    //    Paramètres dédiés pour mobile
+
+    @media (max-width: 768px) {
+         h1 {
+            font-size: 1rem;
+            font-weight: bolder;
+        }
+        justify-content: space-between;
+
+        &__hamburger {
+            display: flex;
+        }
+
+        &__nav {
+            display: none; 
+            position: absolute;
+            top: 100%; 
+            left: 0;
+            width: 100%;
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            z-index: 99; 
+
+            ul {
+                flex-direction: column; 
+                align-items: center;
+                gap: 15px;
+            }
+        }
+
+        &__checkbox:checked ~ &__nav {
+            display: block;
+        }
+
+        &__checkbox:checked ~ &__hamburger span:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        &__checkbox:checked ~ &__hamburger span:nth-child(2) {
+            opacity: 0;
+        }
+
+        &__checkbox:checked ~ &__hamburger span:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    }
 }
