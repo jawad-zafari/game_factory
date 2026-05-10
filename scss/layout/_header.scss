@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative; 
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        img {
+            width: 60px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        h1 {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.5rem;
+            font-weight: bolder;
+            color: #000000;
+            margin: 0;
+        }
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+}
