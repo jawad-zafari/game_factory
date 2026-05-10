@@ -21,4 +21,40 @@
         }
     }
 
+    &__col {
+        h4 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+            font-size: 0.95rem;
+            padding-right: 20px; 
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                margin-bottom: 12px;
+
+                a {
+                    color: rgba(255, 255, 255, 0.8);
+                    text-decoration: underline;
+                    font-size: 0.95rem;
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
 }
