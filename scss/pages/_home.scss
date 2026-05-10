@@ -21,3 +21,45 @@
         font-size: 0.85rem;
     }
 }
+
+// Section Héros
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 60px 5%;
+    background-color:$color-text-muted-light;
+    gap: 40px;
+
+    &__content {
+        flex: 1;
+
+        h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: $color-text-muted;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+    }
+
+    &__image {
+        flex: 1;
+        
+        img {
+            width: 100%;
+            border-radius: 12px;
+        }
+    }
+
+    @include respond-mobile {
+        flex-direction: column;
+        
+        &__content h1 {
+            font-size: 1.5rem;
+        }
+    }
+}
