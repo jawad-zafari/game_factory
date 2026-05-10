@@ -1,0 +1,17 @@
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin respond-mobile {
+    @media (max-width: $bp-mobile) {
+        @content;
+    }
+}
