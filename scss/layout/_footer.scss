@@ -116,5 +116,37 @@
         }
     }
 
-   
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.8);
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 15px;
+            text-align: center;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .footer__legal {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap; 
+            justify-content: center;
+
+            a {
+                color: rgba(255, 255, 255, 0.8);
+                text-decoration: underline;
+
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
 }
