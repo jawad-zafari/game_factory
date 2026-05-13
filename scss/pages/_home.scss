@@ -142,11 +142,11 @@
         grid-template-columns: repeat(4, 1fr); 
         gap: 30px; 
 
-        @media (max-width: 1024px) {
+        @include respond-tablet {
             grid-template-columns: repeat(2, 1fr);
         }
 
-        @media (max-width: 768px) {
+        @include respond-mobile {
             grid-template-columns: 1fr;
         }
     }
@@ -222,7 +222,7 @@
     }
 
   
-    @media (max-width: 768px) {
+    @include respond-mobile {
         font-size: small;
         display: grid;
         grid-template-columns: 120px 1fr; 
@@ -328,7 +328,7 @@
     }
 
 
-    @media (max-width: 768px) {
+    @include respond-mobile {
         &__container {
             flex-direction: column; 
             text-align: center;
